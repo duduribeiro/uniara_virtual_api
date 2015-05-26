@@ -29,4 +29,6 @@ group :test do
   gem "dotenv"
   gem "rack-test"
   gem "rspec"
+  gem "vcr", "~> 2.9.3"
+  gem "webmock"
 end

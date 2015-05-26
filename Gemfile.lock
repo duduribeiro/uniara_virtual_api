@@ -7,6 +7,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    addressable (2.3.8)
     backports (3.6.4)
     celluloid (0.16.0)
       timers (~> 4.0.0)
@@ -15,6 +16,8 @@ GEM
       json_schema (~> 0.3)
       multi_json (~> 1.10)
       rack (~> 1.5)
+    crack (0.4.2)
+      safe_yaml (~> 1.0.0)
     database_cleaner (1.4.1)
     diff-lcs (1.2.5)
     docile (1.1.5)
@@ -81,6 +84,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.2.0)
     rspec-support (3.2.2)
+    safe_yaml (1.0.4)
     sequel (4.22.0)
     sequel-paranoid (0.6.1)
       sequel
@@ -118,6 +122,10 @@ GEM
     uniara_virtual_parser (0.0.1)
       hurley (~> 0.1)
       nokogiri (~> 1.6.6.2)
+    vcr (2.9.3)
+    webmock (1.21.0)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
 
 PLATFORMS
   ruby
@@ -146,3 +154,5 @@ DEPENDENCIES
   sinatra-router
   sucker_punch
   uniara_virtual_parser (~> 0.0.1)
+  vcr (~> 2.9.3)
+  webmock
