@@ -16,11 +16,10 @@ gem "sinatra", "~> 1.4", require: "sinatra/base"
 gem "sinatra-contrib", require: ["sinatra/namespace", "sinatra/reloader"]
 gem "sinatra-router"
 gem "sucker_punch"
+gem "uniara_virtual_parser", '~> 0.0.1'
 
 group :development, :test do
-  #gem 'pry', '~> 0.9.11'
   gem 'pry-remote'
-  #gem 'pry-stack_explorer'
 end
 
 group :test do
