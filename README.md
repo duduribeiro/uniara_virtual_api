@@ -1,5 +1,5 @@
-# Pliny Template app
+# Uniara Virtual API
 
-This is the template app used by the [Pliny](https://github.com/interagent/pliny) gem.
-
-For more information please refer to the gem docs.
+```
+README in progress
+```
