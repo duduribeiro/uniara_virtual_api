@@ -26,6 +26,17 @@ if ENV["COVERAGE"] || ENV["CI"]
   end
 end
 
+require 'vcr'
+VCR.configure do |config|
+  config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
+  config.allow_http_connections_when_no_cassette = true
+  config.configure_rspec_metadata!
+  config.hook_into :webmock
+  #config.before_record do |i|
+  #  i.response.body.force_encoding('UTF-8')
+  #end
+end
+
 require 'dotenv'
 Dotenv.load('.env.test')
 
@@ -55,6 +66,7 @@ RSpec.configure do |config|
   config.expect_with :minitest
   config.run_all_when_everything_filtered = true
   config.filter_run :focus
+
 
   # Run specs in random order to surface order dependencies. If you find an
   # order dependency and want to debug it, you can fix the order by providing

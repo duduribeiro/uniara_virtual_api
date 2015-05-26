@@ -1,5 +1,3 @@
-require 'pry'
-require 'pry-remote'
 module Endpoints
   class Login < Base
     namespace "/login" do
@@ -8,8 +6,14 @@ module Endpoints
       end
 
       post do
-        status 201
-        encode Hash.new
+        begin
+          UniaraVirtualParser.login body_params[:ra], body_params[:password]
+          status 201
+          encode Hash.new
+        rescue UniaraVirtualParser::InvalidLogin
+          status 400
+          '{ "error": "Invalid Login" }'
+        end
       end
 
     end
