@@ -5,9 +5,16 @@ describe Endpoints::Login, :vcr do
 
   describe 'POST /login' do
     context 'with a valid login' do
-      it 'succeeds' do
+      before :each do
         post '/login', ra: '05209024', password: '123456'
+      end
+
+      it 'succeeds' do
         assert_equal 201, last_response.status
+      end
+
+      it 'returns the token in the body' do
+        assert last_response.body =~ /^(?!\s*$).+/
       end
     end
 

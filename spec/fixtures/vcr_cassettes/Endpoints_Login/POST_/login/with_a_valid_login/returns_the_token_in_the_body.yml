@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://virtual.uniara.com.br/login
+    body:
+      encoding: ASCII-8BIT
+      string: username=05209024&senha=123456
+    headers:
+      User-Agent:
+      - Hurley v0.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Content-Length:
+      - '30'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Date:
+      - Tue, 26 May 2015 03:14:36 GMT
+      Content-Type:
+      - text/html
+      Server:
+      - Microsoft-IIS/7.5
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      X-Powered-By:
+      - ASP.NET
+      - PHP/5.2.4
+      Set-Cookie:
+      - PHPSESSID=q25o3hhu2rl2iruteab4gsn6e4; path=/
+      - UVXS233E3=N; expires=Tue, 26-May-2015 01:14:36 GMT
+      - UVXS233E3=S; expires=Tue, 26-May-2015 04:14:36 GMT; path=/
+      - tipoAcesso=virtual; expires=Wed, 27-May-2015 03:14:36 GMT; path=/; domain=.uniara.com.br
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        DQoJCQk8Y2VudGVyPg0KCQkJCTxmb250IGZhY2U9IlRyZWJ1Y2hldCBNUyIg
+        c2l6ZT0iMSI+DQoJCQkJCTxCUj48QlI+PEJSPg0KCQkJCQk8aW1nIHNyYz0i
+        L3RlbXBsYXRlcy9pbWFnZW5zL2xvZ28uanBnIj4NCgkJCQkJPEJSPjxCUj48
+        QlI+DQoJCQkJCTxhIGhyZWY9Ii9hbHVub3MvaW5kZXgvIiBzdHlsZT0idGV4
+        dC1hbGlnbjogY2VudGVyOyB0ZXh0LWRlY29yYXRpb246IG5vbmU7IGNvbG9y
+        PSMwMDAwMDA7Ij48Yj5TZSB2b2PqIG7jbyBmb3IgcmVkaXJlY2lvbmFkbyBh
+        dXRvbWF0aWNhbWVudGUgY2xpcXVlIGFxdWkuPC9iPjwvYT4NCgkJCQk8L2Zv
+        bnQ+DQoJCQk8L2NlbnRlcj4NCgkJCTxzY3JpcHQ+DQoJCQkJd2luZG93Lmxv
+        Y2F0aW9uID0gJy9hbHVub3MvaW5kZXgvJzsNCgkJCTwvc2NyaXB0Pg0KCQkJ
+    http_version: 
+  recorded_at: Tue, 26 May 2015 03:18:47 GMT
+recorded_with: VCR 2.9.3

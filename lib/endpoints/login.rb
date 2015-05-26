@@ -6,9 +6,8 @@ module Endpoints
       end
 
       post do
-        UniaraVirtualParser.login body_params[:ra], body_params[:password]
         status 201
-        encode Hash.new
+        encode UniaraVirtualParser.login body_params[:ra], body_params[:password]
       end
 
     end
