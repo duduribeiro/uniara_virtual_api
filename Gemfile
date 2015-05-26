@@ -5,7 +5,6 @@ gem "multi_json"
 gem "oj"
 gem "pg"
 gem "pliny", "~> 0.8"
-gem "pry"
 gem "puma", "~> 2.10"
 gem "rack-ssl"
 gem "rake"
@@ -19,7 +18,9 @@ gem "sinatra-router"
 gem "sucker_punch"
 
 group :development, :test do
-  gem "pry-byebug"
+  #gem 'pry', '~> 0.9.11'
+  gem 'pry-remote'
+  #gem 'pry-stack_explorer'
 end
 
 group :test do

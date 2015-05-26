@@ -8,12 +8,9 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     backports (3.6.4)
-    byebug (4.0.5)
-      columnize (= 0.9.0)
     celluloid (0.16.0)
       timers (~> 4.0.0)
     coderay (1.1.0)
-    columnize (0.9.0)
     committee (1.7.3)
       json_schema (~> 0.3)
       multi_json (~> 1.10)
@@ -47,13 +44,13 @@ GEM
     prmd (0.7.3)
       erubis (~> 2.7)
       json_schema (~> 0.3, >= 0.3.1)
-    pry (0.10.1)
-      coderay (~> 1.1.0)
-      method_source (~> 0.8.1)
+    pry (0.9.12.6)
+      coderay (~> 1.0)
+      method_source (~> 0.8)
       slop (~> 3.4)
-    pry-byebug (3.1.0)
-      byebug (~> 4.0)
-      pry (~> 0.10)
+    pry-remote (0.1.8)
+      pry (~> 0.9)
+      slop (~> 3.0)
     puma (2.11.3)
       rack (>= 1.1, < 2.0)
     rack (1.6.1)
@@ -126,8 +123,7 @@ DEPENDENCIES
   oj
   pg
   pliny (~> 0.8)
-  pry
-  pry-byebug
+  pry-remote
   puma (~> 2.10)
   rack-ssl
   rack-test
