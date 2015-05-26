@@ -18,4 +18,5 @@ Routes = Rack::Builder.new do
 
   # root app; but will also handle some defaults like 404
   run Endpoints::Root
+  run Endpoints::Login
 end
