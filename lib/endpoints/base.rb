@@ -29,5 +29,11 @@ module Endpoints
       '{"error": "Invalid Login" }'
     end
 
+    private
+
+    def token
+      request.env['HTTP_AUTHORIZATION']
+    end
+
   end
 end
