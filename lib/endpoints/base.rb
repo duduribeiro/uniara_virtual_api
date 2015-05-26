@@ -22,5 +22,12 @@ module Endpoints
       status 404
       "{}"
     end
+
+    error UniaraVirtualParser::InvalidLogin do
+      content_type :json
+      status 400
+      '{"error": "Invalid Login" }'
+    end
+
   end
 end

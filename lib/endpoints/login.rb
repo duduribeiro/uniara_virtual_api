@@ -6,14 +6,9 @@ module Endpoints
       end
 
       post do
-        begin
-          UniaraVirtualParser.login body_params[:ra], body_params[:password]
-          status 201
-          encode Hash.new
-        rescue UniaraVirtualParser::InvalidLogin
-          status 400
-          '{ "error": "Invalid Login" }'
-        end
+        UniaraVirtualParser.login body_params[:ra], body_params[:password]
+        status 201
+        encode Hash.new
       end
 
     end
