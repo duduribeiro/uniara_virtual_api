@@ -1,9 +1,9 @@
 # Uniara Virtual API
 
-API to make integration with Uniara Virtual system.
+API to integrate with Uniara Virtual system.
 
 ## Using (documentation)
-To use the api, follow the next steps.
+To use the API follow the next steps.
 
 ### Login
 This endpoint makes the first step on the Uniara Virtual system, the authentication. This is required before the use to get the token that will be used in all further requests.
