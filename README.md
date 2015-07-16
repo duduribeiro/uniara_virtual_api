@@ -1,7 +1,8 @@
 # Uniara Virtual API
 API to integrate with Uniara Virtual system.
 
-------
+--
+
 Check [here](https://github.com/thiago-sydow/uniaravirtual-app) if you want the Android/iOS source code.
 
 ## Using (documentation)
