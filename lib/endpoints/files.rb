@@ -1,4 +1,3 @@
-require 'pry'
 module Endpoints
   class Files < Base
     namespace '/files' do
