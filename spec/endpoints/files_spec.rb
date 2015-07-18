@@ -1,9 +1,9 @@
 require "spec_helper"
 
-describe Endpoints::Files do
+describe Endpoints::Files, :vcr do
   include Rack::Test::Methods
 
-  describe "GET /files", :vcr do
+  describe "GET /files" do
 
     context 'with a logged user' do
       it 'fetch all the grades' do
@@ -21,4 +21,14 @@ describe Endpoints::Files do
     end
 
   end
+
+  describe 'GET /files/:id' do
+    it 'brings the file to the user' do
+      req = double(:request, header: {'Content-Disposition' => 'filename=myfile'})
+      expect(req).to receive(:body)
+      allow(UniaraVirtualParser::Client).to receive(:get_with_token) { req }
+      get '/files/batman', nil, { 'HTTP_AUTHORIZATION' => 'brucewayne' }
+    end
+  end
+
 end
