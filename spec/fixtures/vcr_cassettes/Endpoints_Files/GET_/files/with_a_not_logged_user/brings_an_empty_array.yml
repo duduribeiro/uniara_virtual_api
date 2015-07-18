@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://virtual.uniara.com.br/alunos/consultas/arquivos/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Hurley v0.1
+      Cookie:
+      - PHPSESSID=invalidtoken;
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Date:
+      - Sat, 18 Jul 2015 17:52:56 GMT
+      Content-Type:
+      - text/html
+      Server:
+      - Microsoft-IIS/7.5
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      X-Powered-By:
+      - ASP.NET
+      - PHP/5.2.4
+      Set-Cookie:
+      - UVXS233E3=S; expires=Sat, 18-Jul-2015 19:53:56 GMT; path=/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 18 Jul 2015 17:57:44 GMT
+recorded_with: VCR 2.9.3
