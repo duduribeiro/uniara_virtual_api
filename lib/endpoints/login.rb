@@ -1,9 +1,6 @@
 module Endpoints
   class Login < Base
     namespace "/login" do
-      before do
-        content_type :json, charset: 'utf-8'
-      end
 
       post do
         status 201

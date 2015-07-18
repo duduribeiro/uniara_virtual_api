@@ -29,6 +29,10 @@ module Endpoints
       '{"error": "Invalid Login" }'
     end
 
+    before do
+      content_type :json, charset: 'utf-8'
+    end
+
     private
 
     def token

@@ -4,8 +4,6 @@ describe Endpoints::Grades do
   include Rack::Test::Methods
 
   describe "GET /grades", :vcr do
-    before :each do
-    end
 
     context 'with a logged user' do
       it 'fetch all the grades' do
