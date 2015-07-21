@@ -385,5 +385,21 @@ HTTP/1.1 200 OK
 }
 ```
 
+### Get File
+This endpoint get a specific file from the URL received from `GET /files`.
+
+#### Attributes
+
+| Name | Type | Description | Example |
+| ------- | ------- | ------- | ------- |
+| **mytoken** | *string* | Used in Authorization Header. Token received from the login | `"mytoken"` |
+
+#### Curl Example
+
+TODO
+
+#### Response Example
+TODO
+
 ## Running (local)
 TODO.
