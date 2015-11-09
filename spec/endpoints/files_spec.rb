@@ -9,7 +9,7 @@ describe Endpoints::Files, :vcr do
       it 'fetch all the grades' do
         get '/files', nil, { 'HTTP_AUTHORIZATION' => 'fgi98jqdu92iqlbo6jmmarp407' }
         assert_equal 8, JSON.parse(last_response.body).length
-        assert_equal 'COORDENAÇÃO', JSON.parse(last_response.body).first[0]
+        assert_equal 'COORDENAÇÃO', JSON.parse(last_response.body).first["grade"]
       end
     end
 
