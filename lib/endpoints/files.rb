@@ -31,6 +31,7 @@ module Endpoints
           grade: k,
           files: files.map do |file|
             {
+              name: file.name,
               link: file.link.gsub(/\/alunos\/consultas\/arquivos\//, '/files/')
             }
           end
