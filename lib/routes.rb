@@ -17,6 +17,7 @@ Routes = Rack::Builder.new do
     mount Endpoints::Files
     mount Endpoints::Grades
     mount Endpoints::Login
+    mount Endpoints::Student
   end
 
   # root app; but will also handle some defaults like 404
