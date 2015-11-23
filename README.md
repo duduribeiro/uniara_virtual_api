@@ -32,6 +32,7 @@ $ curl -n -X POST https://uniara-virtual-api.herokuapp.com/login \
 
 #### Response Example
 The response will be the token that will be used in all further requests.
+The token have 110min to expire.
 ##### With a valid login
 
 ```
