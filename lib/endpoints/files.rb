@@ -15,7 +15,7 @@ module Endpoints
       end
 
       get '/open/:token_param/:id' do
-        send_file UniaraVirtualParser::Client.get_with_token("/alunos/consultas/arquivos/#{params[:id]}", params[:token_param])
+        send_file UniaraVirtualParser::Client.get_with_token("/alunos/consultas/arquivos/#{params[:id]}", params[:token_param]).body
       end
 
     end
