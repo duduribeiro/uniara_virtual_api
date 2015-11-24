@@ -14,6 +14,13 @@ module Endpoints
         response.write req.body
       end
 
+      get '/:token_param/:id' do
+        req = UniaraVirtualParser::Client.get_with_token("/alunos/consultas/arquivos/#{params[:id]}", params[:token])
+        response.headers['content_type'] = "application/octet-stream"
+        attachment(req.header['Content-Disposition'].match(/filename=(.*)/)[1])
+        response.write req.body
+      end
+
     end
 
     private
