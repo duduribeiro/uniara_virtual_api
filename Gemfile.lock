@@ -119,7 +119,7 @@ GEM
       hitimes
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    uniara_virtual_parser (0.1.1)
+    uniara_virtual_parser (0.1.2)
       hurley (~> 0.1)
       nokogiri (~> 1.6.6.2)
     vcr (2.9.3)
