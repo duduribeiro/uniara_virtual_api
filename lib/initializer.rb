@@ -1,6 +1,4 @@
 module Initializer
-  require 'dotenv'
-  Dotenv.load
   def self.run
     require_config
     require_lib
