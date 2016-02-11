@@ -14,8 +14,6 @@ module Config
 
   # Optional -- value is returned or `nil` if it wasn't present.
   optional :placeholder,         string
-  optional :versioning_default,  string
-  optional :versioning_app_name, string
 
   # Override -- value is returned or the set default.
   override :db_pool,          5,    int
@@ -31,6 +29,8 @@ module Config
   override :timeout,          10,    int
   override :database_timeout, 10,    int
   override :force_ssl,        true,  bool
-  override :versioning,       false, bool
+  override :versioning,       true, bool
   override :pretty_json,      false, bool
+  override :versioning_default,  "1", string
+  override :versioning_app_name, "uniara_virtual_api", string
 end

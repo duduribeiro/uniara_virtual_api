@@ -14,22 +14,33 @@ module Endpoints
         response.write req.body
       end
 
+      get '/open/:token_param/:id' do
+        send_file UniaraVirtualParser::Client.get_with_token("/alunos/consultas/arquivos/#{params[:id]}", params[:token_param]).body
+      end
+
     end
 
     private
 
     def replace_files_link(json)
-      new_json = {}
       json.map do |k,v|
-        new_json[k] = v.map do |file|
+        files = v.map do |file|
           UniaraVirtualParser::Models::File.new(
             name: file.name,
             link: file.link.gsub(/\/alunos\/consultas\/arquivos\//, '/files/'),
             grade: file.grade
           )
         end
+        {
+          grade: k,
+          files: files.map do |file|
+            {
+              name: file.name,
+              link: file.link.gsub(/\/alunos\/consultas\/arquivos\//, '/files/')
+            }
+          end
+        }
       end
-      new_json
     end
   end
 end
