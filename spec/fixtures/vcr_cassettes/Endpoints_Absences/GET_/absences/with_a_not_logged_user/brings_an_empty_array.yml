@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://virtual.uniara.com.br/alunos/consultas/faltas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Hurley v0.2
+      Cookie:
+      - PHPSESSID=invalidtoken;
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Content-Type:
+      - text/html
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Server:
+      - Microsoft-IIS/8.5
+      X-Powered-By:
+      - PHP/5.5.27
+      Set-Cookie:
+      - UVXS233E3=S; expires=Fri, 12-Feb-2016 01:27:52 GMT; Max-Age=7260; path=/
+      Date:
+      - Thu, 11 Feb 2016 23:26:52 GMT
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 11 Feb 2016 23:27:15 GMT
+recorded_with: VCR 2.9.3

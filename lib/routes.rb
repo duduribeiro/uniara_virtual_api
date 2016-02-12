@@ -15,6 +15,7 @@ Routes = Rack::Builder.new do
   use Pliny::Router do
     version '1' do
       # mount all endpoints here
+      mount Endpoints::Absences
       mount Endpoints::Files
       mount Endpoints::Grades
       mount Endpoints::Login
