@@ -1,0 +1,21 @@
+common: &default_settings
+  license_key: <%= Config.newrelic_key %>
+  app_name: Uniara Virtual API
+  log_level: info
+  #ssl: false
+
+development:
+  <<: *default_settings
+  app_name: Uniara Virtual API (Development)
+  log_level: debug
+
+test:
+  <<: *default_settings
+  monitor_mode: false
+
+production:
+  <<: *default_settings
+
+staging:
+  <<: *default_settings
+  app_name: Uniara Virtual API (Staging)

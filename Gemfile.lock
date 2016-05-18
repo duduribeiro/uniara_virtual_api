@@ -33,6 +33,7 @@ GEM
     mini_portile (0.6.2)
     minitest (5.6.1)
     multi_json (1.11.0)
+    newrelic_rpm (3.15.2.317)
     nokogiri (1.6.6.4)
       mini_portile (~> 0.6.0)
     oj (2.12.8)
@@ -135,6 +136,7 @@ DEPENDENCIES
   database_cleaner
   dotenv
   multi_json
+  newrelic_rpm
   oj
   pg
   pliny (~> 0.8)
@@ -157,5 +159,8 @@ DEPENDENCIES
   vcr (~> 2.9.3)
   webmock
 
+RUBY VERSION
+   ruby 2.2.1p85
+
 BUNDLED WITH
-   1.11.2
+   1.12.4

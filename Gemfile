@@ -2,6 +2,7 @@ source "https://rubygems.org"
 ruby "2.2.1"
 
 gem "multi_json"
+gem "newrelic_rpm"
 gem "oj"
 gem "pg"
 gem "pliny", "~> 0.8"
