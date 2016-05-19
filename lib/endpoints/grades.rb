@@ -3,7 +3,7 @@ module Endpoints
     namespace "/grades" do
 
       get do
-        encode UniaraVirtualParser.grades token
+        Oj.dump(UniaraVirtualParser.grades(token))
       end
 
     end

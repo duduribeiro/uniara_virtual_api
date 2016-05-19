@@ -1,5 +1,9 @@
 #!/usr/bin/env ruby
 
+require 'dotenv'
+require 'pry'
+Dotenv.load('.env')
+
 require_relative '../lib/application'
 
 def basic_prompt(target_self, nest_level, pry)

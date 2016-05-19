@@ -4,7 +4,7 @@ module Endpoints
 
       post do
         status 201
-        encode UniaraVirtualParser.login body_params[:ra], body_params[:password]
+        Oj.dump(UniaraVirtualParser.login(body_params[:ra], body_params[:password]))
       end
 
     end

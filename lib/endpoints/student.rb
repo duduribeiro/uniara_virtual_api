@@ -3,7 +3,7 @@ module Endpoints
     namespace "/student" do
 
       get do
-        encode UniaraVirtualParser.student token
+        Oj.dump(UniaraVirtualParser.student(token))
       end
 
     end
