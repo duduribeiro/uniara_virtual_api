@@ -17,7 +17,7 @@ gem "sinatra", "~> 1.4", require: "sinatra/base"
 gem "sinatra-contrib", require: ["sinatra/namespace", "sinatra/reloader"]
 gem "sinatra-router"
 gem "sucker_punch"
-gem "uniara_virtual_parser", '~> 1.1.2'
+gem "uniara_virtual_parser", '~> 2.0.0'
 
 group :development, :test do
   gem 'pry-remote'
